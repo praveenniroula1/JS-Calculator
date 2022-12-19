@@ -18,6 +18,12 @@ buttonArray.forEach((eachbtns) => {
     const value = eachbtns.innerText;
     displayOnScreen.innerText = value;
 
+    if (value === "AC") {
+      displayOnScreen = "";
+      screen(displayOnScreen);
+      return;
+    }
+
     displayOnScreen += value;
     screen(displayOnScreen);
   });
