@@ -8,23 +8,17 @@ const buttonArray = Array.from(buttons);
 console.log(buttonArray);
 
 const screen = (str) => {
-  display.innerText = str || 0.001;
+  display.innerText = str || "0.00";
 };
 
-buttonArray.forEach((eachButtons) => {
-  eachButtons.addEventListener("click", () => {
-    const value = eachButtons.innerText;
+let displayOnScreen = "";
 
-    displayValue.innerText = value;
+buttonArray.forEach((eachbtns) => {
+  eachbtns.addEventListener("click", () => {
+    const value = eachbtns.innerText;
+    displayOnScreen.innerText = value;
 
-    if (value === "AC") {
-      displayValue = "";
-      screen(displayValue);
-      return;
-    }
-
-    displayValue += value;
-
-    screen(displayValue);
+    displayOnScreen += value;
+    screen(displayOnScreen);
   });
 });

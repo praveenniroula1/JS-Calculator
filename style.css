@@ -7,14 +7,15 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: rgb(253, 253, 252);
 }
 
 .wrapper {
   height: 100%;
   width: 100%;
   background: linear-gradient(
-    rgba(196, 219, 168, 0.753) rgba(219, 168, 219, 0.753),
-    rgba(0, 0, 255, 0.575)
+    rgba(243, 245, 240, 0.753) rgba(247, 242, 247, 0.753),
+    rgba(248, 248, 250, 0.575)
   );
   position: absolute;
 
@@ -27,10 +28,10 @@ body {
 .calculator {
   height: 500px;
   width: 330px;
-  background: rgba(154, 196, 28, 0.313);
+  background: rgba(243, 244, 238, 0.313);
   border-radius: 10px;
   padding: 7px;
-  box-shadow: -4px 4px 10px 0 rgba(0, 0, 0, 0.904);
+  box-shadow: 15px 4px 10px 10px rgba(0, 0, 0, 0.904);
 
   display: flex;
   flex-direction: column;
@@ -59,7 +60,7 @@ body {
 }
 
 .btn-area > div {
-  background: rgba(122, 113, 95, 0.849);
+  background: rgba(240, 237, 231, 0.849);
   padding: 19px;
   border-radius: 10px;
   box-shadow: -4px 4px 10px 0 rgba(0, 0, 0, 0.904);
@@ -71,7 +72,7 @@ body {
 }
 
 .btn-area > div:hover {
-  background: rgb(218, 206, 72);
+  background: rgb(114, 114, 106);
 }
 
 .btn-zero {
