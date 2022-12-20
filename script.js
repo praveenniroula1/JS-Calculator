@@ -13,6 +13,8 @@ const screen = (str) => {
 
 let displayOnScreen = "";
 
+let operators = ["+", "-", "/", "*"];
+
 buttonArray.forEach((eachbtns) => {
   eachbtns.addEventListener("click", () => {
     const value = eachbtns.innerText;
@@ -24,7 +26,21 @@ buttonArray.forEach((eachbtns) => {
       return;
     }
 
+    if (value === "C") {
+      displayOnScreen = displayOnScreen.slice(0, -1);
+      screen(displayOnScreen);
+      return;
+    }
+
+    //  if (value==="="){
+
+    //  }
+
     displayOnScreen += value;
     screen(displayOnScreen);
   });
 });
+
+const total = () => {
+  const tl = eval(displayOnScreen);
+};
