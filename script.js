@@ -32,9 +32,9 @@ buttonArray.forEach((eachbtns) => {
       return;
     }
 
-    //  if (value==="="){
-
-    //  }
+    if (value === "=") {
+      return total();
+    }
 
     displayOnScreen += value;
     screen(displayOnScreen);
@@ -43,4 +43,6 @@ buttonArray.forEach((eachbtns) => {
 
 const total = () => {
   const tl = eval(displayOnScreen);
+  displayOnScreen = tl.toString();
+  screen(tl);
 };
