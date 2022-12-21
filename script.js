@@ -33,7 +33,9 @@ buttonArray.forEach((eachbtns) => {
     }
 
     if (value === "=") {
-      return total();
+      total();
+
+      return;
     }
 
     displayOnScreen += value;
